@@ -1,0 +1,44 @@
+
+<!-- <h2>My Heroes</h2>
+
+<ul class="heroes">
+  <li *ngFor="let hero of heroes"
+    [class.selected]="hero === clickHero"
+    (click)="onSelect(hero)">
+    <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </li>
+</ul>
+
+<app-hero-detail [hero]="clickHero"></app-hero-detail> -->
+
+
+<div ng-controller="Controller">
+  <form class="form-inline" name="form">
+      <div class="form-group">
+          <label for="country" class="control-label">Country</label>
+          <select name='country' id="country" class="form-control" ng-model="country" ng-options="country as country.CountryName for country in countries" required>
+              <option value="" disabled>Select</option>
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="state" class="control-label">State</label>
+          <select name='state' required id="state" class="form-control" ng-disabled="states.length == 0" ng-model="state" ng-options="state as state.StateName for state in states">
+              <option value="" disabled>Select</option>
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="city" class="control-label">City</label>
+          <select name='city' required id="city" class="form-control" ng-disabled="cities.length == 0" ng-model="city" ng-options="city as city.CityName for city in cities">
+              <option value="" disabled>Select</option>
+          </select>
+      </div>
+      <button class="btn btn-primary" ng-disabled='!city.Id' type="button">Create</button>
+  </form>
+  <p>Selected country: {{country.Id}} - {{country.CountryName}}</p>
+  <p>Selected state: {{state.Id}} - {{state.StateName}}</p>
+  <p>Selected state: {{city.Id}} - {{city.CityName}}</p>
+</div>
+
+
+
+

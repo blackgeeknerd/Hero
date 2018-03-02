@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
 
-
-
 @Component({
   selector: 'app-heros',
   templateUrl: './heros.component.html',
@@ -16,23 +14,28 @@ export class HerosComponent implements OnInit {
 // }
       
 
-    clickHero: Hero;
+  //   clickHero: Hero;
 
-    heroes: Hero[];
+  //   heroes: Hero[];
 
-    constructor(private heroService: HeroService) { }
+  //   constructor(private heroService: HeroService) { }
 
 
-    onSelect(hero: Hero): void {
-      this.clickHero = hero;
-    }
+  //   onSelect(hero: Hero): void {
+  //     this.clickHero = hero;
+  //   }
 
-    getHeroes(): void {
-      this.heroes = this.heroService.getHero();
-    }
+  //   getHeroes(): void {
+  //     this.heroes = this.heroService.getHero();
+  //   }
+
+  // ngOnInit() {
+  //   this.getHeroes();
+  // }
+
+  constructor(private heroService: HeroService) { }
 
   ngOnInit() {
-    this.getHeroes();
   }
  
 }

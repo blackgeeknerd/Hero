@@ -1,8 +1,8 @@
 import { Hero } from './hero';
 
 export const HEROES: Hero[] = [
-    { id: 11, name: 'Mr. Nice' },
-    { id: 12, name: 'Narco' },
+    { id: Lagos, name: 'Nigeria' },
+    { id: Ibadan, name: 'Narco' },
     { id: 13, name: 'Bombasto' },
     { id: 14, name: 'Celeritas' },
     { id: 15, name: 'Magneta' },
@@ -12,5 +12,3 @@ export const HEROES: Hero[] = [
     { id: 19, name: 'Magma' },
     { id: 20, name: 'Tornado' }
   ];
-
-  

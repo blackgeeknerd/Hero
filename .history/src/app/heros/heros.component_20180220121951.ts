@@ -3,7 +3,6 @@ import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
 
 
-
 @Component({
   selector: 'app-heros',
   templateUrl: './heros.component.html',
@@ -27,12 +26,12 @@ export class HerosComponent implements OnInit {
       this.clickHero = hero;
     }
 
-    getHeroes(): void {
+    Heroes(): void {
       this.heroes = this.heroService.getHero();
     }
 
   ngOnInit() {
-    this.getHeroes();
+    this.Heroes();
   }
- 
+
 }

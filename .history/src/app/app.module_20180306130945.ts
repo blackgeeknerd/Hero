@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Observable } from 'rxjs/Observable';
 
 
 
@@ -10,7 +11,6 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroService } from './hero.service';
 import { AppRoutingModule } from './/app-routing.module';
 import { MessagesComponent } from './messages/messages.component';
-import { MessageService } from './message.service';
 
 
 @NgModule({
@@ -27,7 +27,6 @@ import { MessageService } from './message.service';
   ],
   providers: [
     HeroService,
-    MessageService,
   ],
   bootstrap: [AppComponent]
 })
